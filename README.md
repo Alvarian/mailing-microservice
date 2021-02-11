@@ -1,4 +1,4 @@
 ## Payload fields required (JSON)
-guestName
-guestEmail
-guestInqury
+- guestName
+- guestEmail
+- guestInqury
