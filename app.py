@@ -42,4 +42,4 @@ def index():
 
 
 if __name__ == '__main__':
-	app.run(debug=False)
+	app.run(host="{}".format(os.environ.get('DEV_HOST') or '0.0.0.0'), debug=True)
