@@ -1,0 +1,14 @@
+[
+  {
+    "error": {
+      "line": 210,
+      "msg": "this is wrong"
+    },
+    "warnings": [
+      {
+        "line": 330,
+        "msg": "complete this"
+      }
+    ]
+  }
+]
