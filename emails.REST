@@ -2,13 +2,11 @@ POST http://localhost:5000/api/v1/mail/complaints
 Content-Type: application/json
 
 {
-    "error": {
-        "line": 210,
-        "msg": "this is wrong"
-    },
+    "error": null,
     "warnings": [
         {
             "line": 330,
+            "time": "6/13/2010",
             "msg": "complete this"
         }
     ]
