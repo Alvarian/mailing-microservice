@@ -1,4 +1,4 @@
-POST http://localhost:5000/api/v1/mail/complaints
+POST https://portfolio-mailing-service.herokuapp.com/api/v1/mail/complaints
 Content-Type: application/json
 
 {

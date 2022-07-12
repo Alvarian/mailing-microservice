@@ -82,7 +82,7 @@ def post_complains():
 	if not len(state):
 		state.append(payload)
 
-		s = Timer(2.0, timeout_trigger_email, (state))
+		s = Timer(7200.0, timeout_trigger_email, (state))
 
 		s.start()
 	else:
