@@ -53,7 +53,7 @@ def post_message():
 def post_complains():
 	payload = request.get_json()
 	msg = EmailMessage()
-
+	
 	def timeout_trigger_email(*ref_state):
 		date = ref_state[0]['error'] and ''.join(e for e in ref_state[0]['error']['time'] if e.isalnum()) or len(ref_state[0]['warnings']) and ''.join(e for e in ref_state[0]['warnings'][0]['time'] if e.isalnum())
 		filename = 'complaint_report_'+date+'.json'
@@ -82,7 +82,7 @@ def post_complains():
 	if not len(state):
 		state.append(payload)
 
-		s = Timer(7200.0, timeout_trigger_email, (state))
+		s = Timer(20.0, timeout_trigger_email, (state))
 
 		s.start()
 	else:
