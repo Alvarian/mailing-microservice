@@ -53,7 +53,7 @@ def post_message():
 def post_complains():
 	payload = request.get_json()
 	msg = EmailMessage()
-
+	
 	def timeout_trigger_email(*ref_state):
 		date = ref_state[0]['error'] and ''.join(e for e in ref_state[0]['error']['time'] if e.isalnum()) or len(ref_state[0]['warnings']) and ''.join(e for e in ref_state[0]['warnings'][0]['time'] if e.isalnum())
 		filename = 'complaint_report_'+date+'.json'
