@@ -1,3 +1,6 @@
+![](https://img.shields.io/badge/Flask-000000?style=for-the-badge&logo=flask&logoColor=white)
+***
+
 # Instructions
 [Install python 3+](https://www.python.org/) and [pip](https://pypi.org/project/pip/) into your device. 
 
