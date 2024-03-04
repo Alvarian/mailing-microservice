@@ -11,3 +11,18 @@ Content-Type: application/json
         }
     ]
 }
+###
+
+POST http://localhost:5000/api/v1/mail/complaints
+Content-Type: application/json
+
+{
+    "error": null,
+    "warnings": [
+        {
+            "line": 330,
+            "time": "6/13/2010",
+            "msg": "complete this"
+        }
+    ]
+}
